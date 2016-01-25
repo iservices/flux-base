@@ -1,0 +1,35 @@
+{
+  "name": "flux-base",
+  "version": "1.0.0",
+  "description": "A client framework implementation of the flux pattern.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp test-with-coverage",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iservices/flux-base.git"
+  },
+  "keywords": [
+    "flux",
+    "react"
+  ],
+  "author": "natewallace@gmail.com",
+  "license": "UNLICENSED",  
+  "dependencies": {
+    "build-transform": "^1.0.0",
+    "director": "^1.2.8",
+    "event-emitter": "^0.3.4",
+    "flux": "^2.1.1",
+    "gulp": "^3.9.0",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "build-lint": "^1.0.0",
+    "build-test": "^1.0.0",
+    "jsdom": "^7.2.2",
+    "react-addons-test-utils": "^0.14.6"
+  }
+}

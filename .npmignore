@@ -1,0 +1,23 @@
+# Lists files and folders that are not to be included in npm package.
+
+# npm stuff
+node_modules/
+npm-debug.log
+
+# system files
+.DS_Store
+Thumbs.db
+
+# test stuff
+testResults/
+testOutput/
+lib/tests/
+
+# source
+src/
+
+# development stuff
+.eslintrc
+.gitignore
+gulpfile.js
+README.md
