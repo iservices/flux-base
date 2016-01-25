@@ -1,8 +1,8 @@
 {
   "name": "flux-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A client framework implementation of the flux pattern.",
-  "main": "lib/index.js",
+  "main": "lib/local/index.js",
   "scripts": {
     "test": "gulp test-with-coverage",
     "build": "gulp build"
