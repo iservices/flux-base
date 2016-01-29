@@ -33,7 +33,7 @@ Note that you will need to use a bundle and transpiler package such as [build-bu
 The first thing I like to do is define the store for my application.  For this example the store is simply going to save and retrieve data from memory but normally a store would communicate with some kind of backend service.
 Below is code that I've put in a file named `QuestionStore.js`:
 ```JavaScript
-import Flux from `flux-base`;
+import Flux from 'flux-base';
 
 class QuestionStore extends Flux.Store {
   constructor() {
@@ -169,7 +169,7 @@ class QuestionControllerView extends Flux.ControllerView {
     return (
       <div>
         <QuestionAdd />
-        <QuestionList questions={this.store.questions} />
+        <QuestionList questions={this.state.questions} />
       </div>
     );
   }
