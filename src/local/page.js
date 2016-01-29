@@ -178,7 +178,7 @@ class Page {
   }
 
   /**
-   * Build an element that will include the content from the current page and all of it's ancestor pages.
+   * Build an element that will include the content from the current page and all of its ancestor pages.
    * @param {String|ReactClass} [component] - The component to render.
    * @param {Object} [props] - The props for the component to be rendered.
    * @returns {ReactElement} The resulting element or null if there isn't any content.

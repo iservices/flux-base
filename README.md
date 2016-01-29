@@ -39,7 +39,7 @@ class QuestionStore extends Flux.Store {
   constructor() {
     super();
     this.mQuestions = [];
-    this.mQuesitonIdNext = 0;
+    this.mQuestionIdNext = 0;
   }
 
   getQuestions() {
@@ -93,7 +93,7 @@ export default QuestionListView;
 ```
 As you can see, this class extends Flux.View which in turn extends React.Component which means all of your views will be React.Components and will behave the same way, such as how the render function is used.
 The only thing this class expects is a property named questions which will contain a collection of question objects.  
-Each question gets rendered into it's own div element that displays the question subject and body.
+Each question gets rendered into its own div element that displays the question subject and body.
 Now that I've defined the view for displaying questions I'll define the view for adding questions in a file named `QuestionAddView.jsx`:
 ```JSX
 import Flux from 'flux-base';
@@ -227,7 +227,7 @@ For example lets say I have defined a class named MasterPage which extends Flux.
   <div>Bottom</div>
 </div>
 ```
-Now if define a class named DetailPage which extends the MasterPage class and returns the following component when it's getComponent function is called:
+Now if define a class named DetailPage which extends the MasterPage class and returns the following component when its getComponent function is called:
 ```
 <div>Details</div>
 ```
@@ -311,8 +311,8 @@ class ExamplePage extends Flux.Page {
 export default ExamplePage;
 ```
 
-When `//example/myPage.html` is first loaded it will display the FirstView component with input set to 1 for it's properties.  If the user were to
-then navigate to `//example/myPage.html#/second/8` the SecondView component will be displayed with number set to 8 for it's properties.
+When `//example/myPage.html` is first loaded it will display the FirstView component with input set to 1 for its properties.  If the user were to
+then navigate to `//example/myPage.html#/second/8` the SecondView component will be displayed with number set to 8 for its properties.
 
 ## API
 
@@ -347,7 +347,7 @@ Optional parameter that is the id of the DOMElement that components should be re
 Type: `Boolean`
 
 Optional parameter that when defined will indicate if the Page is running within the context of a browser or a server.  By default the Page will
-determine this on it's own but this option can be useful when creating unit tests and you want to override the default behavior.
+determine this on its own but this option can be useful when creating unit tests and you want to override the default behavior.
 
 #### Page.current
 Type: `Page`
