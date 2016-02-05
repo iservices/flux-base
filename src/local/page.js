@@ -120,9 +120,9 @@ class Page {
           pathName = '/' + pathName[0].toLowerCase() + pathName.slice(1);
         }
 
-        const callFunc = () => { // eslint-disable-line no-loop-func
+        const callFunc = function () { // eslint-disable-line no-loop-func
           this[propName].apply(this, arguments);
-        };
+        }.bind(this);
 
         // route without any params set
         routes[pathName] = callFunc;

@@ -1,6 +1,6 @@
 {
   "name": "flux-base",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A client framework implementation of the flux pattern.",
   "main": "lib/local/index.js",
   "scripts": {
