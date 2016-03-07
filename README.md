@@ -129,9 +129,9 @@ class QuestionAddView extends Flux.View {
       <div>
         <form>
           <div><b>Subject:</b></div>
-          <div><input type="text" onChange={this.handleSubjectChange} value={this.state.subject}</input></div>
+          <div><input type="text" onChange={this.handleSubjectChange} value={this.state.subject}></input></div>
           <div><b>Body:</b></div>
-          <div><input type="text" onChange={this.handleBodyChange} value={this.state.body}</input></div>
+          <div><input type="text" onChange={this.handleBodyChange} value={this.state.body}></input></div>
           <div><button type="button" onClick={this.handleAddClick}>Add</button></div>
         </form>
       </div>
